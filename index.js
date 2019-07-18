@@ -7,7 +7,7 @@ const commit = () => {
 }
 
 const scheduleCronstyle = () => {
-    schedule.scheduleJob('*/2 * * * *', () => {
+    schedule.scheduleJob('*/60 * * * *', () => {
         fs.readFile('./record.txt', (err, data) => {
             if (err) {
                 console.log('read err', err)
